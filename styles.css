@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: #8a51fc
+}
+
+.logo {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+
+main {
+    width: 375px; 
+    background: #f4f4f4;
+    border-radius: 20px;
+    margin: 0 auto 40px;
+    padding: 44px 27px 23px;
+}
+
+label {
+     color: #777777;
+     font-weight: 400;
+     font-size: 14px;
+}
+
+select, input {
+    background: #ffffff;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color:  #555555;
+    cursor: pointer;
+}
+
+button {
+    background: #772fd3;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    height: 48px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+section {
+    border: 1px solid #772FD3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow-img {
+    margin: 15px 0;
+}
+
+.currency-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currency {
+    color: #777777;
+    font-size: 14px; 
+}
+
+.currency-value, .currency-value-to-convert {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Mobile (Celulares pequenos) 
+Menos de 375px */
+ 
+@media (max-width: 374px) {
+    .logo {
+        width: 250px;
+    }
+
+    main {
+        width: 100%;
+        padding: 30px 20px 20px;
+        border-radius: 15px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    select, input {
+        height: 45px;
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    button {
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .currency-value, .currency-value-to-convert {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+}
+
+/* MOBILE (Celulares padrão)
+   375px até 480px */
+   @media (min-width: 375px) and (max-width: 480px) {
+    .logo {
+        width: 280px;
+        margin: 15px auto;
+    }
+
+    main {
+        width: 100%;
+        max-width: 375px;
+        padding: 40px 25px 20px;
+    }
+}
+
+/*MOBILE (Celulares grandes)
+   481px até 600px */
+   @media (min-width: 481px) and (max-width: 600px) {
+    .logo {
+        width: 320px;
+    }
+
+    main {
+        width: 90%;
+        max-width: 480px;
+        padding: 45px 30px 25px;
+    }
+
+    .currency-value, .currency-value-to-convert {
+        font-size: 22px;
+    }
+}
+
+/* TABLET (Pequenos - iPad Mini)
+   601px até 768px */
+    @media (min-width: 601px) and (max-width: 768px) {
+    .logo {
+        width: 350px;
+        margin: 30px auto;
+    }
+
+    main {
+        width: 90%;
+        max-width: 550px;
+        margin: 0 auto 50px;
+        padding: 50px 40px 30px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    select, input {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    button {
+        height: 50px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    section {
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .currency-box img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .currency-value, .currency-value-to-convert {
+        font-size: 24px;
+    }
+}
+
+/* TABLET (Grande - iPad Pro)
+   769px até 1024px */
+   @media (min-width: 769px) and (max-width: 1024px) {
+    .logo {
+        width: 400px;
+        margin: 40px auto;
+    }
+
+    main {
+        width: 90%;
+        max-width: 700px;
+        margin: 0 auto 60px;
+        padding: 60px 50px 40px;
+    }
+
+    label {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    select, input {
+        height: 55px;
+        font-size: 17px;
+        padding-left: 20px;
+    }
+
+    button {
+        height: 55px;
+        font-size: 19px;
+    }
+
+    section {
+        padding: 25px;
+        margin-top: 45px;
+    }
+
+    .arrow-img {
+        width: 40px;
+        height: 40px;
+        margin: 20px 0;
+    }
+
+    .currency-box img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .currency {
+        font-size: 16px;
+    }
+
+    .currency-value, .currency-value-to-convert {
+        font-size: 28px;
+    }
+}
