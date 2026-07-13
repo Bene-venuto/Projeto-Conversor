@@ -21,7 +21,3 @@ Um conversor de moedas responsivo feito com HTML, CSS e JavaScript.
 - ✅ Celulares grandes (481-600px)
 - ✅ Tablets (601-1024px)
 - ✅ Desktop (1025px+)
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/SEU_USERNAME/conversor-moedas.git
